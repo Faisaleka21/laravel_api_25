@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/welcome', function (){
+Route::get('/Halo', function (){
     return 'Halo, Laravel';
 });
+
+Route::get('/prduct', [ProductController::class, 'index']);
