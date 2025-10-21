@@ -14,8 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+Route::get('/prducts', [ProductController::class, 'index']);
+Route::post('/prducts', [ProductController::class, 'store']);
+
 Route::get('/Halo', function (){
     return 'Halo, Laravel';
 });
 
-Route::get('/prduct', [ProductController::class, 'index']);
+
+
