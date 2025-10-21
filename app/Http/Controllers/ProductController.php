@@ -11,7 +11,7 @@ class ProductController extends Controller
     {
         $products = product::all();
         return response()->json($products);
-    }
+    } 
 
     public function store(Request $request) {
         $validatedData = $request->validate([
